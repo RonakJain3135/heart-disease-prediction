@@ -59,3 +59,15 @@ numpy
 joblib
 
 Streamlit
+
+
+**📊 Dataset**
+
+Dataset: Heart Failure Prediction
+
+License: Open data for research purposes.
+
+****⚠️ Disclaimer****
+
+This project is intended for educational purposes only.
+It should not be used as medical advice or diagnosis. Please consult a qualified healthcare professional for medical concerns.
