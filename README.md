@@ -63,7 +63,7 @@ Streamlit
 
 **📊 Dataset**
 
-Dataset: Heart Failure Prediction
+Dataset: https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
 
 License: Open data for research purposes.
 
