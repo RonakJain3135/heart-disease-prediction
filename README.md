@@ -1,11 +1,11 @@
-#Heart Disease Risk Predictor
-
+**Heart Disease Risk Predictor
+**
 A machine learning-powered web app built with Streamlit that predicts the likelihood of heart disease based on clinical and lifestyle parameters.
 
 This project uses a Decision Tree / Random Forest classifier trained on the Heart Failure Prediction dataset
 . Users can enter their health data (e.g., age, cholesterol, blood pressure) and get a prediction of whether they are at low or high risk of heart disease.
 
-🚀 Features
+**🚀 Features**
 
 Interactive Streamlit web app with user-friendly input fields.
 
@@ -17,7 +17,8 @@ Easy to deploy on Streamlit Community Cloud.
 
 Model trained with scikit-learn using cleaned and preprocessed Kaggle dataset.
 
-🧑‍⚕️ Input Parameters
+
+**🧑‍⚕️ Input Parameters**
 
 The app considers the following features:
 
@@ -43,7 +44,8 @@ Oldpeak: ST depression (exercise vs rest)
 
 ST Slope: Up, Flat, Down
 
-🛠️ Tech Stack
+
+**🛠️ Tech Stack**
 
 Python
 
