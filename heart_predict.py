@@ -26,22 +26,44 @@ columns = X.columns
 st.title("Heart Disease Risk Predictor")
 
 st.markdown("""
-This tool predicts the likelihood of **heart disease** based on patient health data.  
-Please fill in the details below:
+This tool predicts the likelihood of **heart disease** based on health and lifestyle factors.  
+Please fill in the details below.  
+*(Note: This app is for learning purposes only and not medical advice.)*
 """)
 
 # Collect user inputs
 age = st.number_input("Age", 18, 100, 50)
 sex = st.selectbox("Sex", ["M", "F"])
 chest = st.selectbox("Chest Pain Type", ["ATA", "NAP", "ASY", "TA"])
+st.markdown("""
+**Chest Pain Type**:  
+- **ATA**: Atypical Angina (mild chest pain, less linked to heart disease)  
+- **NAP**: Non-Anginal Pain (chest pain unrelated to the heart)  
+- **ASY**: Asymptomatic (no pain, but often high risk in data)  
+- **TA**: Typical Angina (classic chest pain linked with heart disease)  
+""")
 restbp = st.number_input("Resting Blood Pressure (mm Hg)", 80, 200, 120)
 chol = st.number_input("Cholesterol (mg/dl)", 100, 600, 200)
 fasting = st.selectbox("Fasting Blood Sugar > 120 mg/dl", [0, 1])
 restecg = st.selectbox("Resting ECG Results", ["Normal", "ST", "LVH"])
+st.markdown("""
+**Resting ECG (Electrocardiogram)**:  
+- **Normal**: Normal heart activity  
+- **ST**: Abnormal ST-T wave patterns (possible issues)  
+- **LVH**: Signs of Left Ventricular Hypertrophy (enlarged heart muscle)  
+""")
 maxhr = st.number_input("Maximum Heart Rate Achieved", 60, 220, 150)
 angina = st.selectbox("Exercise-Induced Angina", ["Y", "N"])
+st.markdown("**Exercise-Induced Angina**: Y = chest pain during exercise, N = no pain.")
 oldpeak = st.number_input("Oldpeak (ST depression)", -2.0, 7.0, 1.0, step=0.1)
+st.markdown("**Oldpeak**: Drop in ST segment on ECG after exercise. Higher values = more risk.")
 st_slope = st.selectbox("ST Slope", ["Up", "Flat", "Down"])
+st.markdown("""
+**ST Slope** (shape of ECG line after exercise):  
+- **Up**: Normal, healthy slope  
+- **Flat**: Intermediate concern  
+- **Down**: Often linked with higher heart disease risk  
+""")
 
 if st.button("Predict"):
     # Prepare user input
